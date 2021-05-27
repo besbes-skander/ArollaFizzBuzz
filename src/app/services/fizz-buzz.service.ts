@@ -8,24 +8,27 @@ export class FizzBuzzService {
   constructor() {
   }
 
-  outputFizzBuzz(value: number) : string | number {
-    if(this.divisibleBy3(value) && this.divisibleBy5(value)) {
-      return 'FizzBuzz';
-    }
-    if (this.divisibleBy3(value)) {
-      return 'Fizz';
-    }
-    if (this.divisibleBy5(value)) {
-      return 'Buzz';
-    }
-    return value;
+  outputFizzBuzz(value: number): string | number {
+    let result = '';
+
+    result += this.divisibleBy3(value);
+
+    result += this.divisibleBy5(value);
+
+    result = this.isEmptyResult(value, result);
+
+    return result;
   }
 
-  private divisibleBy5(value: number) : boolean{
-    return value > 0 && value % 5 === 0;
+  private divisibleBy5(value: number): string {
+    return (value > 0 && value % 5 === 0) ? 'Buzz' : '';
   }
 
-  private divisibleBy3(value: number) : boolean {
-    return value > 0 && value % 3 === 0;
+  private divisibleBy3(value: number): string {
+    return (value > 0 && value % 3 === 0) ? 'Fizz' : '';
+  }
+
+  private isEmptyResult(value: number, result: string) {
+    return result.length > 0 ? result : value.toString();
   }
 }
