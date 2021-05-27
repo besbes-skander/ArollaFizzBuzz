@@ -22,10 +22,10 @@ export class FizzBuzzService {
   }
 
   private divisibleBy5(value: number) {
-    return value && value % 5 === 0;
+    return value > 0 && value % 5 === 0;
   }
 
   private divisibleBy3(value: number) {
-    return value && value % 3 === 0;
+    return value > 0 && value % 3 === 0;
   }
 }

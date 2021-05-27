@@ -93,4 +93,12 @@ describe('FizzBuzzService', () => {
 
     expect(result).toEqual('FizzBuzz');
   });
+
+  it('should return -15 for -15', () => {
+    const value = -15;
+
+    const result = service.outputFizzBuzz(value);
+
+    expect(result).toEqual(-15);
+  });
 });
