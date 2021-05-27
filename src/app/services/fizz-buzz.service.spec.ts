@@ -70,7 +70,7 @@ describe('FizzBuzzService', () => {
     expect(result).toEqual('Buzz');
   });
 
-  it('should return Buzz for 15', () => {
+  it('should return FizzBuzz for 15', () => {
     const value = 15;
 
     const result = service.outputFizzBuzz(value);
@@ -78,7 +78,7 @@ describe('FizzBuzzService', () => {
     expect(result).toEqual('FizzBuzz');
   });
 
-  it('should return Buzz for 30', () => {
+  it('should return FizzBuzz for 30', () => {
     const value = 30;
 
     const result = service.outputFizzBuzz(value);
@@ -86,7 +86,7 @@ describe('FizzBuzzService', () => {
     expect(result).toEqual('FizzBuzz');
   });
 
-  it('should return Buzz for 45', () => {
+  it('should return FizzBuzz for 45', () => {
     const value = 45;
 
     const result = service.outputFizzBuzz(value);
