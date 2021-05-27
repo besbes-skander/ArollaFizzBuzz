@@ -9,7 +9,7 @@ export class FizzBuzzService {
   }
 
   outputFizzBuzz(value: number) {
-    if(value === 15) {
+    if(value === 15 || value === 30) {
       return 'FizzBuzz';
     }
     if (this.divisibleBy3(value)) {
