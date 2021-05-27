@@ -9,9 +9,13 @@ export class FizzBuzzService {
   }
 
   outputFizzBuzz(value: number) {
-    if (value === 3 || value === 6) {
+    if (this.divisibleBy3(value)) {
       return 'Fizz';
     }
     return value;
+  }
+
+  private divisibleBy3(value: number) {
+    return value && value % 3 === 0;
   }
 }
