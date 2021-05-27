@@ -21,4 +21,12 @@ describe('FizzBuzzService', () => {
 
     expect(result).toEqual(0);
   });
+
+  it('should return Fizz for 3', () => {
+    const value = 3;
+
+    const result = service.outputFizzBuzz(value);
+
+    expect(result).toEqual('Fizz');
+  });
 });
