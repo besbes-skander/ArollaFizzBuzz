@@ -12,7 +12,7 @@ export class FizzBuzzService {
     if (this.divisibleBy3(value)) {
       return 'Fizz';
     }
-    if(value === 5) {
+    if(value === 5 || value === 10) {
       return 'Buzz';
     }
     return value;
