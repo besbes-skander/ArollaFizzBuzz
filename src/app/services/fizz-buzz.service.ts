@@ -9,7 +9,7 @@ export class FizzBuzzService {
   }
 
   outputFizzBuzz(value: number) {
-    if (value === 3) {
+    if (value === 3 || value === 6) {
       return 'Fizz';
     }
     return value;

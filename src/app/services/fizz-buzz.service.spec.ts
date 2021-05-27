@@ -29,4 +29,12 @@ describe('FizzBuzzService', () => {
 
     expect(result).toEqual('Fizz');
   });
+
+  it('should return Fizz for 6', () => {
+    const value = 6;
+
+    const result = service.outputFizzBuzz(value);
+
+    expect(result).toEqual('Fizz');
+  });
 });
